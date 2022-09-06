@@ -1,0 +1,38 @@
+body{
+    font-size:24px;
+    margin:0;
+}
+#main{
+    background-color: azure;
+    height: 400px;
+    grid-area: main;
+}
+#header{
+    background-color: blue;
+    padding: 15px;
+    grid-area: header;
+}
+#sidebar{
+     background-color:aquamarine;
+     padding: 20px;
+     grid-area: sidebar;
+}
+
+#aside{
+    background-color: antiquewhite;
+    padding: 24px;
+    grid-area: aside;
+}
+#footer{
+    background-color: lightgreen;
+    padding: 24px;
+    grid-area: footer;
+}
+#grid-cointainer{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'sidebar main main main main aside'
+    'footer footer footer footer footer footer'
+    ;
+}

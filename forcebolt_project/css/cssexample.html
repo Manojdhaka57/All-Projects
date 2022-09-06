@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            padding:0;
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+            background-color: #180f0f;
+        }
+        
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover{
+            background-color: #777;
+            color: white;
+        }
+        
+       
+        
+        
+        section{
+            background-color: tomato;
+        }
+        nav{
+            background-color:violet;
+            float: left;
+            width: 30%;
+            height: 50vh;
+            
+        }
+        nav a{
+            margin: 2px auto;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            width: 40%;
+            background-color:rgb(212, 152, 40)
+        }
+        article{
+            background-color: yellowgreen;
+            float: left;
+            width:70%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+        article p{
+            width: 90%;
+        }
+        
+        section::after{
+            content:"";
+            clear: both;
+            display: table;
+
+        }
+        footer{
+            background-color:whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    
+    <section>
+        <nav>
+            <a href="#">The Flight</a>
+            <a href="#">The City</a>
+            <a href="#">The island</a>
+            <a href="#">The food</a>
+        </nav>
+        <article>
+            
+                <h1>The City</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum deserunt iste neque ipsam et.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum porro, temporibus dolorum inventore eum distinctio eaque deserunt atque. Quisquam.</p>
+
+            
+        </article>
+    </section>
+    <footer>
+        <h2>Footer Text</h2>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+        }
+         
+         label{
+            float:left;
+            width:25%;
+            text-align: right;
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+         }
+         input ,select, textarea{
+             float:left;
+             width:75%;
+         }
+         div::after{
+             content: "";
+            display: table;
+            clear: both;
+         }
+         input,select ,textarea{
+             padding: 12px;
+             border: 1px solid #666;
+             border-radius: 5px;
+             resize: horizontal;
+         }
+         button{
+             background-color: #4caf50;
+             color: whitesmoke;
+             padding: 12px 20px;
+             border: none;
+             cursor: pointer;
+             border-radius: 5px;
+             float: right;
+             margin-top: 10px;
+         }
+        form{
+            border-radius: 5px;
+            background-color: #eee;
+            padding: 100px ;
+        }
+        @media screen and (max-width: 600px){
+            input, textarea,label,select{
+                float: none;
+                width: 100%;
+            }
+            label{
+                text-align: left;
+            }
+            form{
+                padding: 20px;
+            }
+            button{
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="firstrname">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="firstname">
+
+        </div>
+        <div class="lastrname">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="lastname">
+
+        </div>
+        <div class="country">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="bangladesh">bangladesh</option>
+                <option value="usa">USA</option>
+            </select>
+
+        </div>
+        <div class="comments">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="comments..."></textarea>
+        </div>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color:#f9f9ff;
+    color:black;
+    min-height: 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: inline;
+    
+}
+nav ul >li{
+    display:inline;
+    padding: 20px 5px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: rgb(14, 7, 7);
+    font-size:1.3rem;
+}
+.company, 
+.insights,
+.industries-nav,
+.services
+{
+    position:relative;
+    display: inline-block;
+}
+.company-dropdown, 
+.insights-dropdown,
+.industries-dropdown,
+.services-dropdown
+{
+    top:100%;
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+    z-index: 1;
+    border-radius: 10px;
+}
+nav ul{
+    margin-right: 30px;
+}
+.company-dropdown  li, 
+.insights-dropdown li,
+.industries-dropdown li,
+.services-dropdown li
+{
+    text-transform: capitalize;
+    display: block;
+    border-bottom: 1px solid black;
+    
+}
+li:hover,.services ul li ul li:hover{
+    background-color:#1571cc;
+}
+.company-dropdown >li:hover,
+.insights-dropdown >li:hover,
+.industries-dropdown >li:hover,
+.services-dropdown >li:hover
+{
+   
+    font-size: 1.2rem;
+}
+.company:hover .company-dropdown,
+.insights:hover .insights-dropdown,
+.industries-nav:hover .industries-dropdown
+
+{
+    display:block;
+}
+.services:hover .services-dropdown{
+    display: flex;
+    min-width:70vw;
+    justify-content: space-between;
+    left:-300%;
+}
+.services ul li ul li{
+    padding:5px;
+    border-bottom: 1px solid rgba(0, 0, 0,0.5);
+}
+.services ul li ul li:hover{
+
+
+    background-color:rgb(233, 233, 153);
+}
+.footer{
+    width:100%;
+    position: relative;
+    height: auto;
+    background-color: #cbc9ee;
+    
+}
+.contain{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.footer .col{
+    width: 190px;
+    height: auto;
+    /* float: left; */
+    padding: 0px 20px 0px 20px;
+    
+}
+.footer .col h3{
+    padding: 20px 0px 5px 0px;
+    color:blue;
+    text-transform: uppercase;
+
+}
+.footer .col ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .col ul li{
+    color: #999999;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+
+}
+.col img{
+    
+    margin: 30px 1px;
+    width:130px;
+    height:130px;
+}
+
+.social{
+    display:flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    display: inline-block;
+    font-size:18px;
+    background-color: #0f1011;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    line-height: 1; 
+    border-radius: 50%;
+
+}
+.contacts-mobile{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.contacts-mobile input{
+    padding: 10px 10px;
+    border: 2px solid white;
+    background-color: #cbc9ee;
+    outline: none;
+    font-size: 25px;
+    margin:10px 0px;
+}
+.contacts-mobile button{
+    margin: 10px 0px;
+    border:none;
+    padding : 10px 30px;
+}
+.contacts-mobile button{
+    background-color: #13aff0;
+    color:white;
+    font-weight: bold;
+}
+.headding{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+.contries{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.contries-btn{
+    padding:10px 50px;
+    border: none;
+    font-size:2rem;
+    border-radius: 30px;
+    margin: 10px ;
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    
+}
+.contries-btn:hover{
+    background: rgba(0,0,0,0.8);
+}
+.office-address{
+    background-color:rgb(111, 111, 245);
+    min-height: 20vh;
+    color: white;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.office-address h4{
+    margin :10px;
+}
+.office-address div{
+    border-bottom: 2px solid black;
+    margin: 10px;
+}
+.underline{
+    height: 2px;
+    width: 20%;
+    display: inline-block;
+    background-color: black;
+}
+.development-services{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 37, 37);
+    color:white;
+}
+.selesforce-services{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.selesforce-services div{
+    text-align: center;
+    margin:10px;
+}
+.selesforce-services div img{
+    margin-bottom: 20px;
+}
+.selesforce-services div h3{
+    margin-bottom: 20px;
+}
+.selesforce-services div p{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:920px){
+    .selesforce-services{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:660px){
+    .selesforce-services{
+        grid-template-columns: 1fr ;
+    }
+}
+.development-services h1{
+    margin: 20px 0px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(189, 202, 189);
+}
+.industry .headding{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.industry .headding h1{
+    border-bottom: 2px solid black;
+}
+.industries{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: thistle;
+
+}
+
+.industries div{
+    min-width: 300px;
+    max-width: 350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 370px;
+    margin: 10px;
+}
+.industry-name{
+    margin: 20px 0px;
+}
+
+.know-more{
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+.btn1{
+    border: 2px solid #ac0781;
+    color: #ac0781;
+}
+.btn1:hover{
+    color: white;
+    background-color: #ac0781;
+}
+.btn2{
+    border: 2px solid #6d35b7;
+    color: #6d35b7;
+}
+.btn2:hover{
+    color: white;
+    background-color: #6d35b7;
+}
+.btn3{
+    border: 2px solid #79c201;
+    color: #79c201;
+}
+.btn3:hover{
+    color: white;
+    background-color: #79c201;
+}
+.indusrty-description{
+    text-align: justify;
+    padding: 10px 10px;
+}
+.hover-underline{
+    
+    color:blue;
+    background-color: rgb(211, 45, 45);
+}
+.salesforceService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+}
+.salesforceService .headding{
+    font-weight: normal;
+    font-size: 0.9rem;
+    border-bottom: 3px solid rgb(49, 46, 46);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cloudServices{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 992px){
+    .cloudServices{
+    
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 500px){
+    .cloudServices{
+    
+        grid-template-columns: 1fr ;
+    }
+}
+.cloudServices div{
+    text-align: center;
+    background-color: aliceblue;
+    margin: 10px;
+    box-shadow: 10px 10px 10px 10px rgb(170, 162, 162);
+    border-radius: 10px;
+    padding: 10px;
+}
+.cloudServices div img,h3,p{
+    padding:5px;
+}
+.salesforceNumbers{
+    background-color: rgba(17,55,92,0.6);
+    
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+}
+.numbers{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 992px){
+    .numbers{
+    
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 500px){
+    .numbers{
+    
+        grid-template-columns: 1fr ;
+    }
+}
+.numbers div h1{
+    color: #fac63a;
+    font-size: 3rem;
+}
+.numbers div h3{
+    color:white;
+}
+.salesforceNumbers div h2{
+    color: white;
+    margin: 10px;
+}
+.numbers div{
+    border :1px solid rgba(17,55,92,0.6);
+    margin: 3px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.crmServices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 236, 227);
+}
+.crmServices .headding{
+    display:inline-block;
+    font-weight: normal;
+    font-size: 0.9rem;
+    border-bottom: 3px solid rgb(49, 46, 46);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.crmContent div{
+        margin:20px;
+}
+.crmContent div p{
+        margin:20px;
+}
+@media screen and (min-width: 992px){
+    .crmContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
+.customer-stories{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(206, 206, 185);
+}
+.cutomers-stories-video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cutomers-stories-video div{
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.customer-stories div h1{
+    text-align:center;
+    padding: 20px 0px;
+    
+}
+.customer-stories >div:last-child{
+    background-color: yellow;
+}
+.aboutus .headding{
+            
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-align:center;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.aboutus .headding h1{
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+
+.slide{
+    border:2px solid black;
+    width: 90%;
+    margin: 10px auto;
+    border-radius:10px;
+}
+.slide h2{
+    margin-left:20px;
+}
+.slide img{
+    border-radius: 50%;
+    float :left;
+    margin: 10px;
+}
+.slide h3{
+    clear: both;
+    text-align: right;
+    margin-right: 20px;
+}
+.slideshow-aboutus {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color:brown;
+    border-radius: 50%;
+    background-color: rgb(146, 124, 35);
+}
+.next{
+    right:0;
+
+}
+.next:hover ,.prev:hover{
+    background-color: #f1f1f1;
+}
+.partner .headding{
+            
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-align:center;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.partner .headding h1{
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+.slideshowPartner{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}

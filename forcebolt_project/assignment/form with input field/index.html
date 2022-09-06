@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form with input fields</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form id="new-person-add-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div>
+                    <label for="fatherName">Father Name</label>
+                    <input type="text" name="fatherName" id="fathername" placeholder="Father Name" required >
+                </div>
+                <div>
+                    <label for="mobilenumber">Mobile Number</label>
+                    <input type="text" name="mobilenumber" id='mobilenumber' placeholder="Mobile Number" >
+                </div>
+                <div>
+                    <label for="address">Address</label>
+            
+                    <textarea cols="30" rows="3" id="address" ></textarea>
+                    
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" >
+                </div>
+                <button type="submit" id='submit'>submit</button>
+            </form>
+
+        </div>
+        
+        <div class="data">
+            <table id="person-data">
+                <tr>
+                    <th>name</th>
+                    <th>father Name</th>
+                    <th>mobile number</th>
+                    <th>address</th>
+                    <th>email</th>
+                    <th>action</th>
+                </tr>
+                
+                    
+               
+                
+            </table>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

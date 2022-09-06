@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border: 2px  solid black;
+    border-radius:4px;
+}
+td{
+    border: 2px solid black;
+    margin: 2px;
+    width: 5vw;
+    border-radius:4px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img src="https://images.vexels.com/media/users/3/145819/isolated/preview/486c34cf5b3b4badd52bc427dbeb44a1-rocket-cartoon-by-vexels.png" alt="rocket vector"> -->
+    <div class="grid-container">
+       <div id="header">header</div>
+       <div id="sidebar">sidebar</div>
+       <div id="main">main</div>
+       <div id="aside">right</div>
+       <div id="footer">footer</div>
+    </div>
+    <script>
+        function person(name,birthyear){
+            this.name=name;
+            this.birthyear=birthyear;
+            this.getdetails = function(){
+                return `name : ${this.name} and age : ${2021-this.birthyear}`;
+            }
+        }
+        const john= new person('manoj', 1999)
+        console.log(john.getdetails());
+    </script>
+</body>
+</html>

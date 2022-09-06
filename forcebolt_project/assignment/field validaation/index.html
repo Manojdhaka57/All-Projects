@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid field</title>
+</head>
+<body>
+    <div>
+        <div>
+            <label for="number">Only  Numbers</label>
+            <input id='number'>
+            
+            <p id='messagenumber'></p>
+        </div>
+        <div>
+            <label for="alphabet">Only Alphabet</label>
+            <input id="alphabet">
+            <p id="messagealphabet"></p>
+            
+        </div>
+        <button type='submit' onclick='myfunction()'>Submit</button>
+
+    </div>
+    <script>
+        function myfunction(){
+            let inputNumber=document.getElementById('number').value;
+            let inputAlphabet=document.getElementById("alphabet").value;
+            let patternNumber=/^[0-9]*$/;
+            let patternAlphabet=/^[a-z]*$/;
+            // if(inputNumber.match(patternNumber).length<=0){
+            //     document.getElementById('messagenumber').innerText='please enter only numbers';
+            // }
+            // else{
+            //     document.getElementById('messagenumber').innerText='valid input'
+            // }
+            document.getElementById('messagenumber').innerText=inputNumber.match(patternNumber);
+            document.getElementById('messagealphabet').innerText=inputAlphabet.match(patternAlphabet);
+        }
+
+    </script>
+</body>
+</html>
